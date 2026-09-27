@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const STORE_NAME = import.meta.env.VITE_STORE_NAME ?? 'GreenCart';
+const STORE_NAME = import.meta.env.STORE_NAME ?? 'GreenCart';
 
 export function Footer() {
   return (

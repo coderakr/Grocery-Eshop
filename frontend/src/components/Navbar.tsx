@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useToast } from '../context/ToastContext';
 
-const STORE_NAME = import.meta.env.VITE_STORE_NAME ?? 'GreenCart';
+const STORE_NAME = import.meta.env.STORE_NAME ?? 'GreenCart';
 
 export function Navbar() {
   const { user, logout } = useAuth();

@@ -4,8 +4,10 @@ import type { ApiEnvelope } from '../types';
 
 const TOKEN_KEY = 'gc_token';
 
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:5000/api';
+
 export const api = axios.create({
-  baseURL: import.meta.env.API_URL,
+  baseURL: API_URL,
   withCredentials: true,
   headers: { 'Content-Type': 'application/json' },
 });
